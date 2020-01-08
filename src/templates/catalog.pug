@@ -1,0 +1,102 @@
+extends /layouts/main_layout
+block vars
+	- var title = "Каталог";
+block content
+	.Catalog
+		.ProductsSlider.Catalog_productsSlider
+			.Container.ProductsSlider_container
+				h2.ProductsSlider_title Расширение линейки. Новые продукты.
+				.swiper-container.Swiper.Swiper-products.ProductsSlider_slider
+					.swiper-wrapper
+						.swiper-slide.Slide.Slide-products
+							.Slide_img
+								img(src="img/product_slide.png", alt="Slide 1")
+						.swiper-slide.Slide.Slide-products
+							.Slide_img
+								img(src="img/product_slide.png", alt="Slide 1")
+						.swiper-slide.Slide.Slide-products
+							.Slide_img
+								img(src="img/product_slide.png", alt="Slide 1")
+						.swiper-slide.Slide.Slide-products
+							.Slide_img
+								img(src="img/product_slide.png", alt="Slide 1")
+					.SwiperPagination.SwiperPagination-products.Swiper_pagination
+		.Breadcrumbs.Catalog_breadcrumbs
+			.Container
+				ul.Breadcrumbs_list
+					li.Breadcrumbs_item
+						a(href="/").Breadcrumbs_link Главная
+					li.Breadcrumbs_item Продукция
+		.Categories
+			.Container
+				h2.SectionTitle.Categories_title Продукция
+				.Categories_row
+					.Categories_col
+						.CategoryBlock.CategoryBlock-greenBg
+							h3.CategoryBlock_title Экобренды Greenway
+							.CategoryBlock_description Одиннадцать линеек продукции для тех, кто выбрал осознанный экологический подход к своей жизни
+					.Categories_col
+						.CategoryBlock
+							.CategoryBlock_textWrapper
+								h3.CategoryBlock_titleImg
+									img(src="img/category_title_img.png", alt="iGen")
+								h4.CategoryBlock_subtitle Генетические тесты для #[br]домашнего использования
+								.CategoryBlock_description Подробный отчёт расскажет всё о ваших особенностях: от обмена веществ и пищеварения до предрасположенности к сердечно-сосудистым и другим заболеваниям
+							.CategoryBlock_img
+								img(src="img/category_img.jpg", alt="Генетические тесты")
+					.Categories_col
+						.CategoryBlock
+							h3.CategoryBlock_titleImg
+								img(src="img/category_title_img2.png", alt="Healthberry")
+							h4.CategoryBlock_subtitle Палитра растворимых #[br]ягодных напитков
+							.CategoryBlock_description Серия ягодных напитков направленного действия с комплексом Тримарин. Шесть ярких вкусов для удовольствия, сбалансированный состав для бодрости и оптимизма
+							.CategoryBlock_img
+								img(src="img/category_img2.jpg", alt="Healthberry")
+					.Categories_col
+						.CategoryBlock
+							h3.CategoryBlock_titleImg
+								img(src="img/category_title_img.png", alt="iGen")
+							h4.CategoryBlock_subtitle Генетические тесты для домашнего использования
+							.CategoryBlock_description Подробный отчёт расскажет всё о ваших особенностях: от обмена веществ и пищеварения до предрасположенности к сердечно-сосудистым и другим заболеваниям
+							.CategoryBlock_img
+								img(src="img/category_img.jpg", alt="Генетические тесты")
+					.Categories_col
+						.CategoryBlock
+							h3.CategoryBlock_titleImg
+								img(src="img/category_title_img2.png", alt="Healthberry")
+							h4.CategoryBlock_subtitle Палитра растворимых ягодных напитков
+							.CategoryBlock_description Серия ягодных напитков направленного действия с комплексом Тримарин. Шесть ярких вкусов для удовольствия, сбалансированный состав для бодрости и оптимизма
+							.CategoryBlock_img
+								img(src="img/category_img2.jpg", alt="Healthberry")
+					.Categories_col
+						.CategoryBlock
+							h3.CategoryBlock_titleImg
+								img(src="img/category_title_img.png", alt="iGen")
+							h4.CategoryBlock_subtitle Генетические тесты для домашнего использования
+							.CategoryBlock_description Подробный отчёт расскажет всё о ваших особенностях: от обмена веществ и пищеварения до предрасположенности к сердечно-сосудистым и другим заболеваниям
+							.CategoryBlock_img
+								img(src="img/category_img.jpg", alt="Генетические тесты")
+					.Categories_col
+						.CategoryBlock
+							h3.CategoryBlock_titleImg
+								img(src="img/category_title_img2.png", alt="Healthberry")
+							h4.CategoryBlock_subtitle Палитра растворимых ягодных напитков
+							.CategoryBlock_description Серия ягодных напитков направленного действия с комплексом Тримарин. Шесть ярких вкусов для удовольствия, сбалансированный состав для бодрости и оптимизма
+							.CategoryBlock_img
+								img(src="img/category_img2.jpg", alt="Healthberry")
+					.Categories_col
+						.CategoryBlock
+							h3.CategoryBlock_titleImg
+								img(src="img/category_title_img.png", alt="iGen")
+							h4.CategoryBlock_subtitle Генетические тесты для домашнего использования
+							.CategoryBlock_description Подробный отчёт расскажет всё о ваших особенностях: от обмена веществ и пищеварения до предрасположенности к сердечно-сосудистым и другим заболеваниям
+							.CategoryBlock_img
+								img(src="img/category_img.jpg", alt="Генетические тесты")
+					.Categories_col
+						.CategoryBlock
+							h3.CategoryBlock_titleImg
+								img(src="img/category_title_img2.png", alt="Healthberry")
+							h4.CategoryBlock_subtitle Палитра растворимых ягодных напитков
+							.CategoryBlock_description Серия ягодных напитков направленного действия с комплексом Тримарин. Шесть ярких вкусов для удовольствия, сбалансированный состав для бодрости и оптимизма
+							.CategoryBlock_img
+								img(src="img/category_img2.jpg", alt="Healthberry")

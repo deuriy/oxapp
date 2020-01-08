@@ -1,0 +1,136 @@
+extends /layouts/main_layout
+block vars
+	- var title = "Healthberry Immunity";
+block content
+	.Product
+		.Breadcrumbs.Product_breadcrumbs
+			.Container
+				ul.Breadcrumbs_list
+					li.Breadcrumbs_item
+						a(href="/").Breadcrumbs_link Главная
+					li.Breadcrumbs_item
+						a(href="/catalog.html").Breadcrumbs_link Продукция
+					li.Breadcrumbs_item
+						a(href="/catalog.html").Breadcrumbs_link Healthberry
+					li.Breadcrumbs_item.Semibold Healthberry Immunity
+		.ProductCard.Product_card
+			.Container.ProductCard_container
+				.ProductCard_left
+					.ProductCard_img
+						a(href="img/product_photo.png")
+							img(src="img/product_photo.png", alt="Фото товара")
+					ul.ProductCard_thumbs
+						li.ProductCard_thumb
+							img(src="img/product_photo.png", alt="Фото товара (миниатюра)")
+						li.ProductCard_thumb
+							img(src="http://placehold.it/512x342", alt="Фото товара (миниатюра)")
+						li.ProductCard_thumb
+							img(src="img/product_photo.png", alt="Фото товара (миниатюра)")
+						li.ProductCard_thumb
+							img(src="http://placehold.it/512x342", alt="Фото товара (миниатюра)")
+				.ProductCard_right
+					h1.ProductCard_title Растворимый напиток healthberry immunity, 14 саше
+					.ProductCard_code #01402
+					.ProductCard_description Черная смородина и линг жи. Иммуностимулирующий растворимый #[br]напиток на основе натуральных экстрактов
+					.ProductCard_price Цена: &nbsp;#[strong 1 320] руб.
+					a(href="javascript: void(0)").BtnPrimary.BtnPrimary-basket В корзину
+						include includes/svg/SvgIco/icon_basket
+		.Tabs.Product_tabs
+			.Container.Tabs_container
+				.Tabs_item
+					a(href="#").Tabs_itemTitle.Tabs_itemTitle-active Описание
+					.Tabs_itemContent.Tabs_itemContent-isOpen
+						p Мы ценим мех за красоту и тепло, которое он дарит. Но меховые изделия чрезвычайно требовательны к уходу. Для того, чтобы надолго сохранить блеск и шелковистость меха, его насыщенный цвет и рисунок, необходимо правильно и бережно чистить его от пыли, грязи и пятен. Натуральное очищающее средство BioTrim NEO 1 эффективно и бережно убирает загрязнения с одежды и аксессуаров из натурального меха, устраняет неприятные запахи. Ухаживающие компоненты NEO 1 придают меху блеск, питают и восстанавливают структуру волоса — меховые волоски становятся более эластичными, лучше держат форму, не образуют заломов. С регулярным уходом BioTrim NEO 1 меховые изделия будут долго радовать вас роскошным внешним видом.
+						p #[span.Semibold СПОСОБ ПРИМЕНЕНИЯ] #[br]Равномерно распылите средство на изделие и протрите чистым махровым полотенцем. Дайте меху полностью высохнуть и расчешите ворс. Если вещь сильно загрязнена, оставьте средство на поверхности на 3–5 минут. В сложных случаях обработку можно повторить. Обратите внимание: спрей на основе растительных экстрактов предназначен для удаления загрязнений природного характера. Не предназначен для устранения пятен химического происхождения (пищевые и химические красители).
+				.Tabs_item
+					a(href="#").Tabs_itemTitle Состав
+					.Tabs_itemContent
+						p Мы ценим мех за красоту и тепло, которое он дарит. Но меховые изделия чрезвычайно требовательны к уходу. Для того, чтобы надолго сохранить блеск и шелковистость меха, его насыщенный цвет и рисунок, необходимо правильно и бережно чистить его от пыли, грязи и пятен. Натуральное очищающее средство BioTrim NEO 1 эффективно и бережно убирает загрязнения с одежды и аксессуаров из натурального меха, устраняет неприятные запахи. Ухаживающие компоненты NEO 1 придают меху блеск, питают и восстанавливают структуру волоса — меховые волоски становятся более эластичными, лучше держат форму, не образуют заломов. С регулярным уходом BioTrim NEO 1 меховые изделия будут долго радовать вас роскошным внешним видом.
+				.Tabs_item
+					a(href="#").Tabs_itemTitle Видео
+					.Tabs_itemContent
+						p Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео Видео
+		.Products.Product_similar
+			.Container
+				.Products_header
+					.Products_headerLeft
+						h2.SectionTitle Альтернативные аналоги
+					.Products_headerRight.hidden-xs
+						.SwiperPagination.SwiperPagination-similarProducts
+			.Container.Container-similarProducts
+				.swiper-container.Swiper.Swiper-similarProducts
+					.swiper-wrapper
+						.swiper-slide.Swiper_slide
+							.ProductBlock
+								.ProductBlock_img
+									img(src="img/product1.png", alt="Revitall Antigelm")
+								.ProductBlock_body
+									.ProductBlock_titles
+										h4.ProductBlock_subtitle #00201
+										h3.ProductBlock_title Revitall Antigelm
+									.ProductBlock_characteristicsAndBtn
+										.Characteristics.ProductBlock_characteristics
+											ul.Characteristics_list
+												li.Characteristics_item
+													span.Characteristics_label Цена
+													span.Characteristics_value #[span.Characteristics_number 3 244] руб.
+										.ProductBlock_btnWrapper
+											a(href="#", title="Добавить в корзину").ProductBlock_btn
+						.swiper-slide.Swiper_slide
+							.ProductBlock
+								.ProductBlock_img
+									img(src="img/product2.png", alt="Ecopam time")
+								.ProductBlock_body
+									.ProductBlock_titles
+										h4.ProductBlock_subtitle #00201
+										h3.ProductBlock_title Ecopam time
+									.ProductBlock_characteristicsAndBtn
+										.Characteristics.ProductBlock_characteristics
+											ul.Characteristics_list
+												li.Characteristics_item
+													span.Characteristics_label Объем
+													span.Characteristics_value #[span.Characteristics_number 42] ед.
+												li.Characteristics_item
+													span.Characteristics_label Цена
+													span.Characteristics_value #[span.Characteristics_number 1 060] руб.
+										.ProductBlock_btnWrapper
+											a(href="#", title="Добавить в корзину").ProductBlock_btn
+						.swiper-slide.Swiper_slide
+							.ProductBlock
+								.ProductBlock_img
+									img(src="img/product3.png", alt="Teavitall premier")
+								.ProductBlock_body
+									.ProductBlock_titles
+										h4.ProductBlock_subtitle #00201
+										h3.ProductBlock_title Teavitall premier
+									.ProductBlock_characteristicsAndBtn
+										.Characteristics.ProductBlock_characteristics
+											ul.Characteristics_list
+												li.Characteristics_item
+													span.Characteristics_label Цена
+													span.Characteristics_value #[span.Characteristics_number 3 244] руб.
+										.ProductBlock_btnWrapper
+											a(href="#", title="Добавить в корзину").ProductBlock_btn
+						.swiper-slide.Swiper_slide
+							.ProductBlock
+								.ProductBlock_img
+									img(src="img/product4.png", alt="Revitall Antigelm")
+								.ProductBlock_body
+									.ProductBlock_titles
+										h4.ProductBlock_subtitle #00201
+										h3.ProductBlock_title Revitall Antigelm
+									.ProductBlock_characteristicsAndBtn
+										.Characteristics.ProductBlock_characteristics
+											ul.Characteristics_list
+												li.Characteristics_item
+													span.Characteristics_label Объем
+													span.Characteristics_value #[span.Characteristics_number 42] ед.
+												li.Characteristics_item
+													span.Characteristics_label Цена
+													span.Characteristics_value #[span.Characteristics_number 1 060] руб.
+										.ProductBlock_btnWrapper
+											a(href="#", title="Добавить в корзину").ProductBlock_btn
+			.Products_bottom.hidden-smPlus
+				.SwiperPagination.SwiperPagination-similarProducts
+block page_bottom
+	script(src="/js/product.js")

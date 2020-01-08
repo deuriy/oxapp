@@ -1,0 +1,67 @@
+.ProductBlock
+	width 301px
+	@extend .transition
+	
+	&:hover
+		-webkit-box-shadow 0 0 65px rgba(222, 222, 222, 0.75)
+		box-shadow 0 0 65px rgba(222, 222, 222, 0.75)
+	
+		.ProductBlock_title
+			color $green2
+		
+		.ProductBlock_characteristics
+			border-bottom-color $green2
+	
+	&_img
+		background $grey2
+	
+	&_body
+		display flex
+		-webkit-flex-direction column
+		-ms-flex-direction column
+		flex-direction column
+		-webkit-justify-content space-between
+		justify-content space-between
+		min-height 258px
+		padding 20px 28px
+		background $white
+	
+	&_subtitle, &_title
+		line-height normal
+		text-align center
+		text-transform uppercase
+		letter-spacing 0.025em
+	
+	&_subtitle
+		margin-bottom 7px
+		font-size 14px
+		color $green2
+	
+	&_title
+		font-weight 700
+		font-size 15px
+		@extend .transition
+	
+	&_characteristics
+		margin-bottom 20px
+		padding-bottom 20px
+		border-bottom 1px solid #e5e9eb
+		@extend .transition
+	
+	&_btnWrapper
+		text-align center
+	
+	&_btn
+		display inline-block
+		width 55px
+		height 35px
+		-webkit-border-radius 16px
+		border-radius 16px
+		background url('../img/icon_basket_white.png') center 45% no-repeat, -webkit-linear-gradient(90deg, #95d600, #c6d721)
+		background url('../img/icon_basket_white.png') center 45% no-repeat, -o-linear-gradient(90deg, #95d600, #c6d721)
+		background url('../img/icon_basket_white.png') center 45% no-repeat, linear-gradient(90deg, #95d600, #c6d721)
+	
+		&:hover
+			background url('../img/icon_basket_white.png') center 45% no-repeat, -webkit-linear-gradient(90deg, #95d600, #95d600)
+			background url('../img/icon_basket_white.png') center 45% no-repeat, -o-linear-gradient(90deg, #95d600, #95d600)
+			background url('../img/icon_basket_white.png') center 45% no-repeat, linear-gradient(90deg, #95d600, #95d600)

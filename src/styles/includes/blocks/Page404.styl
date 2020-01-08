@@ -1,0 +1,49 @@
+.Page404
+	padding-top 37px
+	padding-bottom 200px
+
+	@media $smMinus
+		padding-bottom 150px
+
+	@media $xs
+		padding-bottom 100px
+
+	@media $xxs
+		padding-bottom 50px
+
+	&_breadcrumbs
+		margin-bottom 41px
+	
+	&_title
+		margin-bottom 39px
+	
+	&_text, &_img
+		text-align center
+
+	&_text
+		margin-bottom 3.06em
+		line-height 1.75
+
+		@media $smMinus
+			font-size 15px
+
+		@media $xs
+			font-size 14px
+
+		@media $xxs
+			font-size 14px
+
+		a
+			color $green
+			text-decoration underline
+
+			&:hover
+				text-decoration none
+	
+	&_img
+		img
+			@media $smMinus
+				width 470px
+			
+			@media $xxs
+				width 340px

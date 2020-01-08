@@ -1,0 +1,17 @@
+extends /layouts/main_layout
+block vars
+	- var title = "404";
+block content
+	.Page404
+		.Breadcrumbs.Page404_breadcrumbs
+			.Container
+				ul.Breadcrumbs_list
+					li.Breadcrumbs_item
+						a(href="/").Breadcrumbs_link Главная
+					li.Breadcrumbs_item.Semibold 404 &nbsp;ERROR
+		.Page404_content
+			.Container
+				h1.SectionTitle.Page404_title 404 Error
+				.Page404_text Страница на найдена или удаленна, #[br]вы можете вернуться на #[a(href="/").Semibold Главную страницу]
+				.Page404_img
+					img(src="img/404.png", alt="404")

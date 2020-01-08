@@ -1,0 +1,53 @@
+extends /layouts/main_layout
+block vars
+	- var title = "Корзина (2-ой шаг)";
+block content
+	.BasketPage
+		.Breadcrumbs.BasketPage_breadcrumbs
+			.Container
+				ul.Breadcrumbs_list
+					li.Breadcrumbs_item
+						a(href="/").Breadcrumbs_link Главная
+					li.Breadcrumbs_item
+						a(href="/basket_first.html").Breadcrumbs_link Корзина
+					li.Breadcrumbs_item.Semibold Оформление заказа
+		.Container.BasketPage_container
+			.BasketPage_header
+				h1.SectionTitle.BasketPage_title Оформление заказа
+				ul.Steps
+					li.Steps_item.Steps_item-green.Steps_item-lineGreen 1
+					li.Steps_item.Steps_item-green 2
+			.BasketPage_body
+				form(action="#").Form.BasketPage_form
+					.Form_wrapper
+						.Form_fieldGroup
+							.Form_field
+								label(for="name").FormLabel.Form_label Имя
+									span.Required *
+								input(type="text", name="name", id="name").TextField.Form_textField
+							.Form_field
+								label(for="surname").FormLabel.Form_label Фамилия
+								input(type="text", name="surname", id="surname").TextField.Form_textField
+						.Form_fieldGroup
+							.Form_field
+								label(for="city").FormLabel.Form_label Город
+									span.Required *
+								input(type="text", name="city", id="city").TextField.Form_textField
+							.Form_field
+								label(for="address").FormLabel.Form_label Адрес
+									span.Required *
+								input(type="text", name="address", id="address").TextField.Form_textField
+						.Form_fieldGroup
+							.Form_field
+								label(for="tel").FormLabel.Form_label Телефон
+									span.Required *
+								input(type="tel", name="tel", id="tel").TextField.Form_textField
+							.Form_field
+								label(for="email").FormLabel.Form_label E-mail
+								input(type="email", name="email", id="email").TextField.Form_textField
+					.Form_agreement
+						.Checkbox
+							input(type="checkbox", name="agreement", id="agreement", value="yes").Checkbox_input
+							label(for="agreement").Checkbox_label Я принимаю "#[span.Checkbox_agreement Соглашение об обработке персональных данных"]
+					.Form_actions
+						button(type="submit").BtnPrimary.BtnPrimary-form Отправить

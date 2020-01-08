@@ -1,0 +1,43 @@
+.Share
+	display flex
+	justify-content space-between
+	max-width 1198px
+	padding 2.25em 3.25em 2em 3.44em
+	background $white
+	line-height 1.75
+
+	@media $smMinus
+		font-size 15px
+	
+	@media $xs
+		flex-direction column
+		padding 1em 2em
+		font-size 14px
+	
+	@media $xxs
+		font-size 13px
+
+	&_title
+		font-weight 600
+
+		@media $xs
+			margin-bottom 0.4em
+
+	&_socials
+		display flex
+
+		@media $xxs
+			flex-direction column
+	
+	&_social
+		margin-right 3.69em
+
+		&:last-child
+			margin-right 0
+	
+	&_socLink
+		color $black2
+		@extend .transition
+		
+		&:hover
+			color $green

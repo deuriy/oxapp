@@ -1,0 +1,41 @@
+.Brands
+	font-size 14px
+
+	@media $xs
+		font-size 13px
+	
+	@media $xxs
+		text-align center
+
+	&_title
+		margin-bottom 7px
+		font-weight 600
+		line-height 1.714
+		text-transform uppercase
+		color $white
+	
+	&_description
+		margin-bottom 15px
+		line-height normal
+		color #7d7d7d
+	
+	&_list
+		@media $xxs
+			text-align left
+	
+	&_item
+		display inline
+		margin-right 1.86em
+
+		&:last-child
+			margin-right 0
+	
+	&_link
+		font-weight 600
+		line-height: 2.143
+		text-transform uppercase
+		color $green2
+		@extend .transition
+
+		&:hover
+			color $white

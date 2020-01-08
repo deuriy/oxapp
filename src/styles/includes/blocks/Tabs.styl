@@ -1,0 +1,81 @@
+.Tabs
+	&_container
+		font-size 0
+
+		&:before, &:after
+			content ' '
+			display table
+		
+		&:after
+			clear both
+
+	&_item
+		display inline
+
+		@media $xs
+			display block
+	
+	&_itemTitle, &_itemContent
+		font-size 14px
+		line-height 2
+
+		@media $smMinus
+			font-size 13px
+	
+	&_itemTitle
+		display inline-block
+		padding 1.07em 2.142em 0.93em 2.79em
+		border-right 1px solid #f4f4f4
+		background #efedf2
+		text-transform uppercase
+		@extend .transition
+
+		@media $xs
+			display block
+		
+		@media $xxs
+			padding-right 20px
+			padding-left 20px
+
+		&:after
+			content ''
+			display inline-block
+			width 5px
+			height 3px
+			margin-left 10px
+			background url('../img/tabs_arrow.png') 0 0 no-repeat
+			transform rotate(180deg)
+			vertical-align middle
+			@extend .transition
+
+		&-active
+			background $white
+
+			&:after
+				transform rotate(0)
+	
+	&_itemContent
+		display none
+		float left
+		padding 46px 104px 45px 86px
+		background $white
+		@extend .transition
+
+		@media $smMinus
+			padding 40px 50px
+		
+		@media $xs
+			float none
+			padding 30px 35px
+		
+		@media $xxs
+			padding 20px
+
+		p
+			margin-bottom 28px
+
+			&:last-child
+				margin-bottom 0
+
+		&-isOpen
+			display block

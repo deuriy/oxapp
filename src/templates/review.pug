@@ -1,0 +1,43 @@
+extends /layouts/main_layout
+block vars
+	- var title = "Оставить отзыв";
+block content
+	.Review
+		.Breadcrumbs.Review_breadcrumbs
+			.Container
+				ul.Breadcrumbs_list
+					li.Breadcrumbs_item
+						a(href="/").Breadcrumbs_link Главная
+					li.Breadcrumbs_item.Semibold Оставить отзыв
+		.Container.Review_container
+			h1.SectionTitle.Review_title Оставить отзыв
+			form(action="#").Form.Review_form
+				.Form_wrapper
+					.Form_fieldGroup
+						.Form_field
+							label(for="name").FormLabel.Form_label Имя
+								span.Required *
+							input(type="text", name="name", id="name").TextField.Form_textField
+						.Form_field
+							label(for="surname").FormLabel.Form_label Фамилия
+							input(type="text", name="surname", id="surname").TextField.Form_textField
+					.Form_fieldGroup
+						.Form_field
+							label(for="city").FormLabel.Form_label Город
+								span.Required *
+							input(type="text", name="city", id="city").TextField.Form_textField
+						.Form_field
+							label(for="email").FormLabel.Form_label E-mail
+								span.Required *
+							input(type="email", name="email", id="email").TextField.Form_textField
+					.Form_fieldGroup
+						.Form_field
+							label(for="review").FormLabel.Form_label Текст сообщения
+								span.Required *
+							textarea(name="review", id="review").TextArea
+				.Form_agreement
+					.Checkbox
+						input(type="checkbox", name="agreement", id="agreement", value="yes").Checkbox_input
+						label(for="agreement").Checkbox_label Я принимаю "#[span.Checkbox_agreement Соглашение об обработке персональных данных"]
+				.Form_actions
+					button(type="submit").BtnPrimary.BtnPrimary-form Отправить

@@ -1,0 +1,78 @@
+.BasketPage
+	padding-top 37px
+	padding-bottom 70px
+
+	&_breadcrumbs
+		margin-bottom 38px
+	
+	&_header
+		display flex
+		justify-content space-between
+		align-items center
+		margin-bottom 44px
+		padding-right 36px
+
+		@media $xs
+			flex-direction column-reverse
+			align-items flex-start
+			margin-bottom 25px
+			padding-right 0
+	
+	&_title
+		@media $xs
+			margin-top 20px
+	
+	&_tableWrapper
+		width 100%
+		overflow-x auto
+	
+	&_bottom
+		text-align right
+
+		@media $xs
+			text-align left
+
+	&_orderPrice
+		padding-top 46px
+		padding-right 36px
+		padding-bottom 56px
+		font-size 21px
+
+		@media $smMinus
+			padding-top 40px
+			padding-bottom 45px
+			font-size 19px
+
+		@media $xs
+			padding-top 30px
+			padding-bottom 35px
+			font-size 17px
+
+		@media $xxs
+			padding-top 20px
+			padding-bottom 25px
+			font-size 15px
+	
+	&_orderPriceLabel
+		color #888d96
+	
+	&_orderBtns
+		display flex
+		justify-content flex-end
+		align-items center
+		padding-right 38px
+
+		@media $xs
+			align-items flex-start
+			flex-direction column
+	
+	&_checkoutBtn
+		margin-left 18px
+
+		@media $xs
+			margin-top 10px
+			margin-left 0
+	
+	&_form
+		margin-right auto
+		margin-left auto

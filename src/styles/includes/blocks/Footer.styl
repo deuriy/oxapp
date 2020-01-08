@@ -1,0 +1,116 @@
+.Footer
+	background #373736 url('../img/footer_border_top.png') 0 0 no-repeat
+
+	&_top
+		padding-top 76px
+		padding-bottom 31px
+		border-bottom 1px solid #5c5c5c
+
+		@media $smMinus
+			padding-top 50px
+		
+		@media $xs
+			padding-top 40px
+			padding-bottom 20px
+	
+	&_topContainer, &_bottomContainer
+		display flex
+	
+	&_topContainer
+		@media $xxs
+			flex-direction column
+	
+	&_topLeft
+		flex 0 0 411px
+		padding-left 2px
+
+		@media $smMinus
+			flex-basis 300px
+		
+		@media $xs
+			flex-basis 240px
+		
+		@media $xxs
+			margin-bottom 6px
+	
+	&_topLeft, &_topRight
+		@media $xxs
+			display flex
+			flex-direction column
+			align-items center
+	
+	&_menu
+		margin-top 55px
+
+		@media $smMinus
+			margin-top 25px
+		
+		@media $xxs
+			margin-top 20px
+			text-align center
+	
+	&_topRight
+		flex-grow 1
+		padding-top 6px
+	
+	&_phone
+		margin-bottom 62px
+
+		@media $smMinus
+			margin-bottom 32px
+		
+		@media $xxs
+			margin-bottom 20px
+	
+	&_brands
+		margin-bottom 69px
+
+		@media $smMinus
+			margin-bottom 20px
+		
+		@media $xxs
+			width 280px
+			max-width 100%
+	
+	&_bottomContainer
+		display flex
+		justify-content space-between
+		align-items center
+		padding-top 30px
+		padding-bottom 31px
+
+		@media $smMinus
+			padding-top 20px
+			padding-bottom 20px
+		
+		@media $xs
+			flex-direction column
+			padding-top 15px
+			padding-bottom 15px
+	
+	&_copyright, &_development
+		font-size 13.1px
+		line-height 1.3846
+		color $white
+
+		a:hover
+			text-decoration underline
+	
+	&_copyright
+		@media $xs
+			margin-bottom 7px
+			text-align center
+
+		a
+			color $green2
+	
+	&_development
+		display flex
+		align-items center
+	
+	&_developmentLogo
+		margin-left 22px
+
+		@media $xs
+			width 25px
+			margin-left 12px

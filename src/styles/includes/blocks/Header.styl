@@ -1,0 +1,82 @@
+.Header
+	@media $xs
+		padding-top 20px
+		padding-bottom 20px
+
+	&_container
+		display flex
+
+		@media $xs
+			flex-direction column
+		
+	&_left, &_right
+		display flex
+		-webkit-align-items center
+		align-items center
+		height 109px
+
+		@media $xs
+			height auto
+	
+	&_left
+		display flex
+		-webkit-justify-content space-between
+		justify-content space-between
+		-webkit-flex-grow 1
+		flex-grow 1
+		padding-right 49px
+
+		@media $xs
+			padding-right 0
+			justify-content center
+	
+	&_logoAndBurger
+		display flex
+		-webkit-justify-content space-between
+		justify-content space-between
+		-webkit-flex-basis 467px
+		flex-basis 467px
+		margin-right 35px
+		
+		@media $smMinus
+			margin-right 0
+		
+		@media $xs
+			flex-direction column
+			flex-basis 216px
+	
+	&_logo
+		display block
+
+		@media $xs
+			margin-bottom 15px
+		
+		@media $xxs
+			width 170px
+			margin 0 auto 10px
+	
+	&_menuHamburger, &_phone
+		flex-shrink 0
+	
+	&_menuHamburger
+		@media $xs
+			margin-bottom 15px
+		
+		@media $xxs
+			margin-bottom 7px
+	
+	&_right
+		-webkit-justify-content flex-end
+		justify-content flex-end
+		-webkit-flex-basis 276px
+		flex-basis 276px
+		padding-right 5px
+		border-left 1px solid #e5e9eb
+
+		@media $smMinus
+			flex-basis 245px
+		
+		@media $xs
+			flex-basis auto
+			justify-content center
+			border-left none

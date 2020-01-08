@@ -1,0 +1,131 @@
+.ProductCard
+	&_container
+		display flex
+		justify-content space-between
+
+		@media $xs
+			flex-direction column
+
+	&_left
+		width 40.443%
+
+		@media $xs
+			display flex
+			flex-direction column
+			align-items center
+			width auto
+			margin-bottom 20px
+	
+	&_img, &_thumbs
+		@media $xs
+			max-width 512px
+	
+	&_img, &_thumb
+		border 1px solid transparent
+		cursor pointer
+		@extend .transition
+		
+		&:hover
+			border-color $green
+	
+	&_img
+		position relative
+		margin-bottom 12px
+
+		@media $smMinus
+			margin-bottom 10px
+
+		a, img
+			display block
+		
+		&:after
+			content ''
+			position absolute
+			top 14px
+			right 16px
+			width 18px
+			height 18px
+			background url('../img/loupe.png') 0 0 no-repeat
+			pointer-events none
+	
+	&_thumbs
+		display flex
+		flex-wrap wrap
+
+		@media $sm
+			justify-content space-between
+	
+	&_thumb
+		flex-basis 120px
+		margin-right 10px
+		margin-bottom 10px
+
+		@media $sm
+			flex 0 0 calc(50% - 5px)
+			
+			&:nth-child(2n)
+				margin-right 0
+
+		img
+			display block
+
+		&:last-child
+			margin-right 0
+	
+	&_right
+		width 54.187%
+
+		@media $xs
+			width auto
+	
+	&_title
+		margin-top -4px
+		margin-bottom 1.375em
+		font-weight 700
+		font-size 24px
+		line-height 1.2
+		letter-spacing 0.025em
+		text-transform uppercase
+
+		@media $smMinus
+			margin-top 0
+			font-size 21px
+		
+		@media $xs
+			font-size 19px
+		
+		@media $xxs
+			font-size 17px
+	
+	&_code
+		margin-bottom 1.625em
+		font-weight 700
+		letter-spacing 0.025em
+		color $green
+
+		@media $smMinus
+			font-size 14px
+		
+		@media $xs
+			font-size 13px
+	
+	&_description
+		margin-bottom 2.6875em
+		line-height 1.5625
+
+		@media $smMinus
+			font-size 14px
+		
+		@media $xs
+			font-size 13px
+	
+	&_price
+		margin-bottom 2.89em
+		font-size 18px
+		letter-spacing 0.025em
+
+		@media $smMinus
+			font-size 15px
+		
+		@media $xs
+			font-size 14px

@@ -1,0 +1,58 @@
+.CategoryBlock
+	// display flex
+	// flex-direction column
+	// justify-content space-between
+	width 409px
+	padding-top 20px
+	background $white
+	text-align center
+	@extend .transition
+
+	&:hover
+		box-shadow 0 0 65px rgba(222, 222, 222, .75)
+	
+	// &_textWrapper
+
+	&_titleImg
+		display flex
+		justify-content center
+		align-items center
+		min-height 120px
+		margin-bottom 13px
+	
+	&_subtitle, &_description
+		padding-right 40px
+		padding-left 40px
+
+	&_subtitle
+		margin-bottom 1em
+		font-size 18px
+		line-height 1.56
+		letter-spacing: 0.025em
+		color $black2
+	
+	&_description
+		margin-bottom 2.09em
+		font-size 13px
+		line-height 1.62
+		color #868d97
+
+	&-greenBg
+		padding 54px 47px
+		background url('../img/category_green_bg.png') 0 0 no-repeat
+		text-align left
+
+		.CategoryBlock_title
+			margin-bottom 35px
+			font-weight 700
+			font-size 24px
+			line-height 1.34
+			text-transform uppercase
+			color $white
+		
+		.CategoryBlock_description
+			max-width 300px
+			padding 0
+			font-size 18px
+			line-height 1.78
+			color $black2

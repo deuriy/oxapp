@@ -1,0 +1,328 @@
+extends /layouts/main_layout
+block vars
+	- var title = "Главная страница";
+block content
+	.Frontpage
+		.swiper-container.Swiper.Swiper-business.Frontpage_slider
+			.swiper-wrapper
+				.swiper-slide.Slide
+					.Slide_img
+						img(src="img/slide1_1.png", alt="Slide 1")
+					.Slide_wrapper
+						.Slide_slogan Начать свой бизнес
+						.Slide_textWrapper
+							h3.Slide_title Быстрый старт бизнеса
+							.Slide_description Начните сейчас и уже через год ваша машина и квартира будут круче чем у вашего босса!
+				.swiper-slide.Slide
+					.Slide_img
+						img(src="img/slide1_1.png", alt="Slide 1")
+					.Slide_wrapper
+						.Slide_slogan Стать свободным
+						.Slide_textWrapper
+							h3.Slide_title Свобода и успех
+							.Slide_description Лучшие отели, отличная компания и уверенность в завтрашнем дне!
+				.swiper-slide.Slide
+					.Slide_img
+						img(src="img/slide1_1.png", alt="Slide 1")
+					.Slide_wrapper
+						.Slide_slogan Начать свой бизнес
+						.Slide_textWrapper
+							h3.Slide_title Быстрый старт бизнеса
+							.Slide_description Начните сейчас и уже через год ваша машина и квартира будут круче чем у вашего босса!
+			.Swiper_paginationWrapper
+				.Container.SwiperPagination.SwiperPagination-businessSlider.Swiper_pagination
+		.Products.Frontpage_products
+			.Container
+				h2.SectionTitle.Products_title Новинки продукции
+				.Products_row
+					.Products_col
+						.ProductBlock
+							.ProductBlock_img
+								img(src="img/product1.png", alt="Revitall Antigelm")
+							.ProductBlock_body
+								.ProductBlock_titles
+									h4.ProductBlock_subtitle #00201
+									h3.ProductBlock_title Revitall Antigelm
+								.ProductBlock_characteristicsAndBtn
+									.Characteristics.ProductBlock_characteristics
+										ul.Characteristics_list
+											li.Characteristics_item
+												span.Characteristics_label Цена
+												span.Characteristics_value #[span.Characteristics_number 3 244] руб.
+									.ProductBlock_btnWrapper
+										a(href="#", title="Добавить в корзину").ProductBlock_btn
+					.Products_col
+						.ProductBlock
+							.ProductBlock_img
+								img(src="img/product2.png", alt="Ecopam time")
+							.ProductBlock_body
+								.ProductBlock_titles
+									h4.ProductBlock_subtitle #00201
+									h3.ProductBlock_title Ecopam time
+								.ProductBlock_characteristicsAndBtn
+									.Characteristics.ProductBlock_characteristics
+										ul.Characteristics_list
+											li.Characteristics_item
+												span.Characteristics_label Объем
+												span.Characteristics_value #[span.Characteristics_number 42] ед.
+											li.Characteristics_item
+												span.Characteristics_label Цена
+												span.Characteristics_value #[span.Characteristics_number 1 060] руб.
+									.ProductBlock_btnWrapper
+										a(href="#", title="Добавить в корзину").ProductBlock_btn
+					.Products_col
+						.ProductBlock
+							.ProductBlock_img
+								img(src="img/product3.png", alt="Teavitall premier")
+							.ProductBlock_body
+								.ProductBlock_titles
+									h4.ProductBlock_subtitle #00201
+									h3.ProductBlock_title Teavitall premier
+								.ProductBlock_characteristicsAndBtn
+									.Characteristics.ProductBlock_characteristics
+										ul.Characteristics_list
+											li.Characteristics_item
+												span.Characteristics_label Цена
+												span.Characteristics_value #[span.Characteristics_number 3 244] руб.
+									.ProductBlock_btnWrapper
+										a(href="#", title="Добавить в корзину").ProductBlock_btn
+					.Products_col
+						.ProductBlock
+							.ProductBlock_img
+								img(src="img/product4.png", alt="Revitall Antigelm")
+							.ProductBlock_body
+								.ProductBlock_titles
+									h4.ProductBlock_subtitle #00201
+									h3.ProductBlock_title Revitall Antigelm
+								.ProductBlock_characteristicsAndBtn
+									.Characteristics.ProductBlock_characteristics
+										ul.Characteristics_list
+											li.Characteristics_item
+												span.Characteristics_label Объем
+												span.Characteristics_value #[span.Characteristics_number 42] ед.
+											li.Characteristics_item
+												span.Characteristics_label Цена
+												span.Characteristics_value #[span.Characteristics_number 1 060] руб.
+									.ProductBlock_btnWrapper
+										a(href="#", title="Добавить в корзину").ProductBlock_btn
+					.Products_col
+						.ProductBlock
+							.ProductBlock_img
+								img(src="img/product1.png", alt="Revitall Antigelm")
+							.ProductBlock_body
+								.ProductBlock_titles
+									h4.ProductBlock_subtitle #00201
+									h3.ProductBlock_title Revitall Antigelm
+								.ProductBlock_characteristicsAndBtn
+									.Characteristics.ProductBlock_characteristics
+										ul.Characteristics_list
+											li.Characteristics_item
+												span.Characteristics_label Цена
+												span.Characteristics_value #[span.Characteristics_number 3 244] руб.
+									.ProductBlock_btnWrapper
+										a(href="#", title="Добавить в корзину").ProductBlock_btn
+					.Products_col
+						.ProductBlock
+							.ProductBlock_img
+								img(src="img/product2.png", alt="Ecopam time")
+							.ProductBlock_body
+								.ProductBlock_titles
+									h4.ProductBlock_subtitle #00201
+									h3.ProductBlock_title Ecopam time
+								.ProductBlock_characteristicsAndBtn
+									.Characteristics.ProductBlock_characteristics
+										ul.Characteristics_list
+											li.Characteristics_item
+												span.Characteristics_label Объем
+												span.Characteristics_value #[span.Characteristics_number 42] ед.
+											li.Characteristics_item
+												span.Characteristics_label Цена
+												span.Characteristics_value #[span.Characteristics_number 1 060] руб.
+									.ProductBlock_btnWrapper
+										a(href="#", title="Добавить в корзину").ProductBlock_btn
+					.Products_col
+						.ProductBlock
+							.ProductBlock_img
+								img(src="img/product3.png", alt="Teavitall premier")
+							.ProductBlock_body
+								.ProductBlock_titles
+									h4.ProductBlock_subtitle #00201
+									h3.ProductBlock_title Teavitall premier
+								.ProductBlock_characteristicsAndBtn
+									.Characteristics.ProductBlock_characteristics
+										ul.Characteristics_list
+											li.Characteristics_item
+												span.Characteristics_label Цена
+												span.Characteristics_value #[span.Characteristics_number 3 244] руб.
+									.ProductBlock_btnWrapper
+										a(href="#", title="Добавить в корзину").ProductBlock_btn
+					.Products_col
+						.ProductBlock
+							.ProductBlock_img
+								img(src="img/product4.png", alt="Revitall Antigelm")
+							.ProductBlock_body
+								.ProductBlock_titles
+									h4.ProductBlock_subtitle #00201
+									h3.ProductBlock_title Revitall Antigelm
+								.ProductBlock_characteristicsAndBtn
+									.Characteristics.ProductBlock_characteristics
+										ul.Characteristics_list
+											li.Characteristics_item
+												span.Characteristics_label Объем
+												span.Characteristics_value #[span.Characteristics_number 42] ед.
+											li.Characteristics_item
+												span.Characteristics_label Цена
+												span.Characteristics_value #[span.Characteristics_number 1 060] руб.
+									.ProductBlock_btnWrapper
+										a(href="#", title="Добавить в корзину").ProductBlock_btn
+					.Products_col
+						.ProductBlock
+							.ProductBlock_img
+								img(src="img/product1.png", alt="Revitall Antigelm")
+							.ProductBlock_body
+								.ProductBlock_titles
+									h4.ProductBlock_subtitle #00201
+									h3.ProductBlock_title Revitall Antigelm
+								.ProductBlock_characteristicsAndBtn
+									.Characteristics.ProductBlock_characteristics
+										ul.Characteristics_list
+											li.Characteristics_item
+												span.Characteristics_label Цена
+												span.Characteristics_value #[span.Characteristics_number 3 244] руб.
+									.ProductBlock_btnWrapper
+										a(href="#", title="Добавить в корзину").ProductBlock_btn
+					.Products_col
+						.ProductBlock
+							.ProductBlock_img
+								img(src="img/product2.png", alt="Ecopam time")
+							.ProductBlock_body
+								.ProductBlock_titles
+									h4.ProductBlock_subtitle #00201
+									h3.ProductBlock_title Ecopam time
+								.ProductBlock_characteristicsAndBtn
+									.Characteristics.ProductBlock_characteristics
+										ul.Characteristics_list
+											li.Characteristics_item
+												span.Characteristics_label Объем
+												span.Characteristics_value #[span.Characteristics_number 42] ед.
+											li.Characteristics_item
+												span.Characteristics_label Цена
+												span.Characteristics_value #[span.Characteristics_number 1 060] руб.
+									.ProductBlock_btnWrapper
+										a(href="#", title="Добавить в корзину").ProductBlock_btn
+					.Products_col
+						.ProductBlock
+							.ProductBlock_img
+								img(src="img/product3.png", alt="Teavitall premier")
+							.ProductBlock_body
+								.ProductBlock_titles
+									h4.ProductBlock_subtitle #00201
+									h3.ProductBlock_title Teavitall premier
+								.ProductBlock_characteristicsAndBtn
+									.Characteristics.ProductBlock_characteristics
+										ul.Characteristics_list
+											li.Characteristics_item
+												span.Characteristics_label Цена
+												span.Characteristics_value #[span.Characteristics_number 3 244] руб.
+									.ProductBlock_btnWrapper
+										a(href="#", title="Добавить в корзину").ProductBlock_btn
+					.Products_col
+						.ProductBlock
+							.ProductBlock_img
+								img(src="img/product4.png", alt="Revitall Antigelm")
+							.ProductBlock_body
+								.ProductBlock_titles
+									h4.ProductBlock_subtitle #00201
+									h3.ProductBlock_title Revitall Antigelm
+								.ProductBlock_characteristicsAndBtn
+									.Characteristics.ProductBlock_characteristics
+										ul.Characteristics_list
+											li.Characteristics_item
+												span.Characteristics_label Объем
+												span.Characteristics_value #[span.Characteristics_number 42] ед.
+											li.Characteristics_item
+												span.Characteristics_label Цена
+												span.Characteristics_value #[span.Characteristics_number 1 060] руб.
+									.ProductBlock_btnWrapper
+										a(href="#", title="Добавить в корзину").ProductBlock_btn
+				.Products_btnWrapper
+					a(href="#").BtnMore Показать ещё
+		.Reviews.Frontpage_reviews
+			.Container
+				.Reviews_header
+					.Reviews_headerLeft
+						h2.SectionTitle Отзывы
+						a(href="#").Link.Reviews_leaveFeedback Оставить отзыв
+					.Reviews_headerRight.hidden-xs
+						.SwiperPagination.SwiperPagination-reviews
+			.Container.Container-reviewsSlider.Reviews_body
+				.swiper-container.Swiper.Swiper-reviews
+					.swiper-wrapper
+						.swiper-slide.Swiper_slide
+							.Feedback.Swiper_feedback
+								.Feedback_header
+									.Feedback_date 20.05.2019
+									.Feedback_author Иванов Иван Иванович
+								.Feedback_body
+									.Feedback_text
+										p Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.
+						.swiper-slide.Swiper_slide
+							.Feedback.Swiper_feedback
+								.Feedback_header
+									.Feedback_date 20.05.2019
+									.Feedback_author Иванов Иван Иванович
+								.Feedback_body
+									.Feedback_text
+										p Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.
+						.swiper-slide.Swiper_slide
+							.Feedback.Swiper_feedback
+								.Feedback_header
+									.Feedback_date 20.05.2019
+									.Feedback_author Иванов Иван Иванович
+								.Feedback_body
+									.Feedback_text
+										p Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.
+						.swiper-slide.Swiper_slide
+							.Feedback.Swiper_feedback
+								.Feedback_header
+									.Feedback_date 20.05.2019
+									.Feedback_author Иванов Иван Иванович
+								.Feedback_body
+									.Feedback_text
+										p Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.
+			.Reviews_bottom
+				.SwiperPagination.SwiperPagination-reviews.hidden-smPlus
+		.Faq
+			.Container
+				.Faq_header
+					h2.SectionTitle FAQ
+					a(href="#").Link.Faq_ask Задать вопрос
+				.Faq_row
+					.Faq_col
+						.FaqItem.Faq_item
+							h3.FaqItem_question
+								a(href="#") Требуется ли мне увольняться с основного места работы?
+							.FaqItem_answer Наш бизнес строится на работе с входящим потоком заявок. В среднем, это занимает 2-3 часа в день. Однако бывает и больше, ведь всё зависит от Вас. Вы самостоятельно определяете интенсивность и продолжительность Вашей работы.
+						.FaqItem.Faq_item
+							h3.FaqItem_question
+								a(href="#") Сколько времени занимает обучение и настройка Системы?
+							.FaqItem_answer Наш бизнес строится на работе с входящим потоком заявок. В среднем, это занимает 2-3 часа в день. Однако бывает и больше, ведь всё зависит от Вас. Вы самостоятельно определяете интенсивность и продолжительность Вашей работы.
+						.FaqItem.Faq_item
+							h3.FaqItem_question
+								a(href="#") Требуется ли мне увольняться с основного места работы?
+							.FaqItem_answer Наш бизнес строится на работе с входящим потоком заявок. В среднем, это занимает 2-3 часа в день. Однако бывает и больше, ведь всё зависит от Вас. Вы самостоятельно определяете интенсивность и продолжительность Вашей работы.
+					.Faq_col
+						.FaqItem.Faq_item
+							h3.FaqItem_question
+								a(href="#") Сколько времени требует ведение бизнеса?
+							.FaqItem_answer Наш бизнес строится на работе с входящим потоком заявок. В среднем, это занимает 2-3 часа в день. Однако бывает и больше, ведь всё зависит от Вас. Вы самостоятельно определяете интенсивность и продолжительность Вашей работы.
+						.FaqItem.Faq_item
+							h3.FaqItem_question
+								a(href="#") Сколько времени занимает обучение и настройка Системы?
+							.FaqItem_answer Наш бизнес строится на работе с входящим потоком заявок. В среднем, это занимает 2-3 часа в день. Однако бывает и больше, ведь всё зависит от Вас. Вы самостоятельно определяете интенсивность и продолжительность Вашей работы.
+						.FaqItem.Faq_item
+							h3.FaqItem_question
+								a(href="#") Требуется ли мне увольняться с основного места работы?
+							.FaqItem_answer Наш бизнес строится на работе с входящим потоком заявок. В среднем, это занимает 2-3 часа в день. Однако бывает и больше, ведь всё зависит от Вас. Вы самостоятельно определяете интенсивность и продолжительность Вашей работы.
+block page_bottom
+	script(src="/js/index.js")

@@ -1,0 +1,29 @@
+.SecondaryLinks
+	&_item
+		margin-bottom 1px
+
+		&:last-child
+			margin-bottom 0
+
+	&_link
+		font-size 14px
+		line-height 2.857
+		color $white
+		@extend .transition
+
+		@media $xs
+			font-size 13px
+		
+		@media $xxs
+			line-height 2.457
+
+		&:hover, &-active
+			color $green2
+
+	&-inline
+		.SecondaryLinks_item
+			display inline
+			margin-right 28px
+
+			&:last-child
+				margin-right 0

@@ -1,0 +1,49 @@
+.Faq
+	padding-top 61px
+	padding-bottom 63px
+	background $white
+	
+	&_header
+		display flex
+		-webkit-align-items center
+		align-items center
+		margin-bottom 34px
+		
+		@media $xs
+			justify-content space-between
+	
+	&_ask
+		margin-left 21px
+	
+	&_row
+		display flex
+		-webkit-flex-wrap wrap
+		-ms-flex-wrap wrap
+		flex-wrap wrap
+		-webkit-align-items flex-start
+		align-items flex-start
+		margin-right -10px
+		margin-left -10px
+
+		@media $xs
+			flex-direction column
+			align-items stretch
+	
+	&_col
+		flex 1 0 0
+		width 50%
+		padding 0 10px
+
+		@media $xs
+			flex 0 0 auto
+			width auto
+			margin-bottom 19px
+
+			&:last-child
+				margin-bottom 0
+	
+	&_item
+		margin-bottom 19px
+
+		&:last-child
+			margin-bottom 0

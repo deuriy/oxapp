@@ -1,0 +1,50 @@
+.PrimaryLinks
+	&_list
+		display flex
+	
+	&_item
+		margin-right 46px
+
+		@media $mdMinus
+			margin-right 30px
+			
+		@media $smMinus
+			margin-right 13px
+		
+		&:last-child
+			margin-right 0
+	
+	&_link
+		font-size 14px
+		line-height 2.14
+		color $black2
+		@extend .transition
+
+		@media $smMinus
+			font-size 12px
+		
+		&:hover, &-active
+			color $white
+	
+	&-social
+		.PrimaryLinks_item
+			margin-right 29px
+
+			@media $mdMinus
+				margin-right 20px
+			
+			@media $smMinus
+				margin-right 13px
+			
+			&:last-child
+				margin-right 0
+	
+	&-overlay
+		.PrimaryLinks_list
+			display block
+		
+		.PrimaryLinks_item
+			display inline
+
+		.PrimaryLinks_link
+			color $green2

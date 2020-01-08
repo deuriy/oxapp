@@ -1,0 +1,44 @@
+.SwiperPagination
+	display flex
+	-webkit-justify-content flex-end
+	justify-content flex-end
+
+	@media $smMinus
+		justify-content center
+	
+	&_bullet
+		width 25px
+		height 3px
+		margin-right 5px
+		background $white
+		outline none
+		cursor pointer
+		@extend .transition
+		
+		&:last-child
+			margin-right 0
+		
+		&-active
+			background $green2
+	
+	&-reviews, &-similarProducts			
+		.SwiperPagination_bullet
+			background #AEB1B7
+			
+			&-active
+				background #95D600
+	
+	&-reviews
+		@media $xs
+			position relative
+			margin-top -30px
+			margin-bottom 28px
+
+	&-products
+		justify-content center
+
+		.SwiperPagination_bullet
+			background #b3b6bc
+
+			&-active
+				background #95d600

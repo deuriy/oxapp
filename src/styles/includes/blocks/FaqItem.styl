@@ -1,0 +1,65 @@
+.FaqItem
+	width 623px
+	max-width 100%
+	border-bottom 5px solid $grey
+	background $grey
+	@extend .transition
+
+	@media $xs
+		width auto
+	
+	&:hover
+		border-bottom-color $green2
+	
+	&_question
+		position relative
+		display flex
+		align-items center
+		height 8em
+		padding-right 2.357em
+		padding-left 2.357em
+		font-weight 600
+		font-size 14px
+		line-height 1.5
+		text-transform uppercase
+		letter-spacing 0.025em
+		@extend .transition
+		
+		@media $smMinus
+			padding-right 1.657em
+			padding-left 1.657em
+			font-size 13px
+		
+		a
+			flex-grow 1
+			padding-top 8px
+			padding-bottom 8px
+
+			&:after
+				content ''
+				position absolute
+				right 29px
+				bottom 16px
+				left 22px
+				height 1px
+	
+	&_answer
+		display none
+		padding 10px 45px 54px 29px
+		font-size 14.23px
+		line-height 1.71
+		color #888D96
+
+		@media $smMinus
+			padding 10px 20px 23px 20px
+			font-size 13px
+	
+	&-open
+		.FaqItem_answer
+			display block
+		
+		.FaqItem_question
+			color $green2
+			
+			a:after
+				background #e5e9eb

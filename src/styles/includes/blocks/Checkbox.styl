@@ -1,0 +1,36 @@
+.Checkbox
+	position relative
+	display inline-block
+	
+	&:hover
+		.Checkbox_label:before
+			border-color $black
+	
+	&_input
+		position absolute
+		clip rect(0, 0, 0, 0)
+		
+		&:checked ~ .Checkbox_label:before
+			background-image url('../img/checkmark.png')
+	
+	&_label
+		font-size 13px
+		
+		&:before
+			content ""
+			display inline-block
+			flex-shrink 0
+			width 19px
+			height 19px
+			margin-top -3px
+			margin-right 14px
+			border 1px solid #c9cfd2
+			border-radius 2px
+			background-color $white
+			background-position center center
+			background-repeat no-repeat
+			vertical-align middle
+			@extend .transition
+	
+	&_agreement
+		color #72c45f

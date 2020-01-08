@@ -1,0 +1,47 @@
+.Top.hidden-xs
+	.Container.Top_container
+		.Top_left
+			.PrimaryLinks
+				ul.PrimaryLinks_list
+					li.PrimaryLinks_item
+						a(href="#").PrimaryLinks_link О компании
+					li.PrimaryLinks_item
+						a(href="#").PrimaryLinks_link FAQ
+					li.PrimaryLinks_item
+						a(href="#").PrimaryLinks_link Отзывы
+					li.PrimaryLinks_item
+						a(href="#").PrimaryLinks_link Начать свой бизнес
+					li.PrimaryLinks_item
+						a(href="#").PrimaryLinks_link Мой офис
+					li.PrimaryLinks_item
+						a(href="#").PrimaryLinks_link Магазин онлайн
+		.Top_right
+			.PrimaryLinks.PrimaryLinks-social
+				ul.PrimaryLinks_list
+					li.PrimaryLinks_item
+						a(href="http://vk.com", target="_blank").PrimaryLinks_link Vkontakte
+					li.PrimaryLinks_item
+						a(href="http://instagram.com", target="_blank").PrimaryLinks_link Instagram
+					li.PrimaryLinks_item
+						a(href="http://youtube.com", target="_blank").PrimaryLinks_link YouTube
+.Header
+	.Container.Header_container
+		.Header_left
+			.Header_logoAndBurger
+				a(href="/", title="Greenway").Header_logo
+					img(src="img/logo.png", alt="Логотип")
+				a(href="javascript: void(0)", onclick="openNav()").Caption.Header_menuHamburger
+					span.CircleIcon.Caption_icon
+						img(src="img/icon_burger.png", alt="Burger")
+					span.Caption_text Продукция
+			a(href="tel:+88000000000", title="Позвонить").Caption.Header_phone.hidden-smMinus
+				span.CircleIcon.Caption_icon
+					img(src="img/icon_phone.png", alt="Phone")
+				span.Caption_text 8 800 000 00 00
+		.Header_right
+			.Basket
+				a(href="#", title="Перейти в корзину").CircleIcon.CircleIcon-large.Basket_icon
+					img(src="img/icon_basket.png", alt="Basket")
+				.Basket_content
+					a(href="#").Basket_title Корзина
+					.Basket_orderPrice 2 товара &nbsp;4 860 руб.

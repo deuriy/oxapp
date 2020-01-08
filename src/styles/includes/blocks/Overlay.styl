@@ -1,0 +1,60 @@
+.Overlay
+	position fixed
+	z-index 1
+	left 0
+	top 0
+	width 0
+	height 100%
+	padding-top 80px
+	background rgba(44, 45, 47, 0.92) url('../img/footer_border_top.png') 0 0 no-repeat
+	overflow-x hidden
+	transition 0.5s
+
+	@media $mdMinus
+		padding-top 40px
+
+	@media $smMinus
+		padding-top 30px
+	
+	@media $xxs
+		padding-top 20px
+
+	&_header
+		display flex
+		justify-content flex-end
+		margin-bottom 20px
+
+		@media $xxs
+			margin-bottom 10px
+
+	&_close
+		display inline-block
+		width 46px
+		height 46px
+		padding 10px
+		margin-top -10px
+		margin-right -10px
+		background url('../img/icon_close.png') center center no-repeat
+
+		@media $smMinus
+			width 20px
+			height 20px
+			margin-top 0
+			margin-right 0
+			padding 0
+		
+		@media $xxs
+			width 16px
+			height 16px
+	
+	&_phone
+		margin-bottom 20px
+	
+	&_mainMenu
+		margin-bottom 16px
+	
+	&_primaryLinks
+		margin-bottom 10px
+
+		&:last-child
+			margin-bottom 0

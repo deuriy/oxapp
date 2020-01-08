@@ -1,0 +1,86 @@
+.Article
+	padding-top 37px
+	padding-bottom 60px
+
+	&_breadcrumbs
+		margin-bottom 41px
+	
+	&_title
+		margin-bottom 39px
+		margin-left -84px
+
+		@media $mdMinus
+			margin-left 0
+	
+	&_text
+		margin-bottom 39px
+		line-height 1.75
+		text-align justify
+
+		@media $smMinus
+			font-size 15px
+		
+		@media $xs
+			font-size 14px
+		
+		@media $xxs
+			font-size 13px
+
+		p
+			margin-bottom 1.75em
+
+			&:last-child
+				margin-bottom 0
+		
+		a
+			color $green
+			text-decoration underline
+
+			&:hover
+				text-decoration none
+		
+		ul
+			margin-top 0.375em
+			margin-bottom 2.1875em
+			padding-left 55px
+
+			@media $xs
+				padding-left 35px
+			
+			@media $xxs
+				padding-left 10px
+
+			li
+				position relative
+				margin-bottom 7px
+				padding-left 22px
+
+				&:last-child
+					margin-bottom 0
+
+				&:before
+					content ''
+					position absolute
+					top 0
+					left 0
+					bottom 0
+					width 6px
+					height 6px
+					margin auto
+					background $green
+	
+	&_images
+		display flex
+		justify-content space-between
+		margin-top 2.8125em
+		margin-bottom 2.8125em
+
+		@media $xs
+			flex-direction column
+			align-items center
+			margin-top 1.875em
+			margin-bottom 1.875em
+	
+	&_share
+		margin-right auto
+		margin-left auto

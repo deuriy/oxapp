@@ -1,0 +1,28 @@
+.SectionTitle
+	font-weight 700
+	font-size 24px
+	line-height normal
+	text-transform uppercase
+	letter-spacing 0.025em
+
+	@media $smMinus
+		font-size 22px
+
+	@media $xs
+		font-size 20px
+
+	@media $xs
+		font-size 18px
+	
+	&:before
+		content ""
+		display inline-block
+		width 86px
+		height 1px
+		margin-right 19px
+		margin-bottom 6px
+		background $green
+		vertical-align middle
+		
+		@media $xs
+			display none

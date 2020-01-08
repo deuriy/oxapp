@@ -1,0 +1,88 @@
+doctype html
+block vars
+html(lang="ru")
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+		meta(name="format-detection" content="telephone=no")
+		title #{title} | Greenway
+		link(rel="apple-touch-icon" href="img/apple-touch-icon.png")
+		link(rel="shortcut icon" type="image/x-icon" href="img/favicon.ico")
+		link(href='/css/vendor.css', rel='stylesheet')
+		link(href='/css/style.css', rel='stylesheet')
+	body
+		//- #pagePreloader.Preloader.Preloader-active
+		
+		.Wrapper
+			include /includes/blocks/Header.pug
+
+			main.MainContent
+				block content
+
+			include /includes/blocks/Footer.pug
+		
+		.Overlay#MainNavigation
+			.Container
+				.Overlay_header
+					a(href="javascript: void(0)", onclick="closeNav()", title="Закрыть").Overlay_close
+				.Overlay_body
+					a(href="tel:+88000000000", title="Позвонить").Caption.Caption-white.Overlay_phone.hidden-mdPlus
+						span.CircleIcon.Caption_icon
+							img(src="img/icon_phone.png", alt="Phone")
+						span.Caption_text 8 800 000 00 00
+					.MainMenu.Overlay_mainMenu
+						ul.MainMenu_menu
+							li.MainMenu_item
+								a(href="#").MainMenu_link Avitall
+							li.MainMenu_item
+								a(href="#").MainMenu_link Aquamagic plush
+							li.MainMenu_item
+								a(href="#").MainMenu_link SHARME
+							li.MainMenu_item
+								a(href="#").MainMenu_link REVITALL
+							li.MainMenu_item
+								a(href="#").MainMenu_link BAOFIBER
+							li.MainMenu_item
+								a(href="#").MainMenu_link AQUAMATIC
+							li.MainMenu_item
+								a(href="#").MainMenu_link SHARME ESSENTIAL
+							li.MainMenu_item
+								a(href="#").MainMenu_link HEALTHBERRY
+							li.MainMenu_item
+								a(href="#").MainMenu_link AQUAMAGIC
+							li.MainMenu_item
+								a(href="#").MainMenu_link TEAVITALL
+							li.MainMenu_item
+								a(href="#").MainMenu_link ECOPAM
+							li.MainMenu_item
+								a(href="#").MainMenu_link BIOTRIM
+							li.MainMenu_item
+								a(href="#").MainMenu_link IGEN
+					.PrimaryLinks.PrimaryLinks-overlay.Overlay_primaryLinks.hidden-smPlus
+						ul.PrimaryLinks_list
+							li.PrimaryLinks_item
+								a(href="#").PrimaryLinks_link О компании
+							li.PrimaryLinks_item
+								a(href="#").PrimaryLinks_link FAQ
+							li.PrimaryLinks_item
+								a(href="#").PrimaryLinks_link Отзывы
+							li.PrimaryLinks_item
+								a(href="#").PrimaryLinks_link Начать свой бизнес
+							li.PrimaryLinks_item
+								a(href="#").PrimaryLinks_link Мой офис
+							li.PrimaryLinks_item
+								a(href="#").PrimaryLinks_link Магазин онлайн
+					.PrimaryLinks.PrimaryLinks-overlay.Overlay_primaryLinks.PrimaryLinks-social.hidden-smPlus
+						ul.PrimaryLinks_list
+							li.PrimaryLinks_item
+								a(href="http://vk.com", target="_blank").PrimaryLinks_link Vkontakte
+							li.PrimaryLinks_item
+								a(href="http://instagram.com", target="_blank").PrimaryLinks_link Instagram
+							li.PrimaryLinks_item
+								a(href="http://youtube.com", target="_blank").PrimaryLinks_link YouTube
+
+		script(src='./js/vendor.js')
+		script(src='./js/common.js')
+
+		block page_bottom

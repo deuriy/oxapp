@@ -1,0 +1,50 @@
+.ProductsTable
+	width 100%
+
+	@media $xs
+		width 767px
+	
+	tbody
+		tr
+			&:first-child td
+				border-top 1px solid #acd023
+
+			&:last-child td
+				border-bottom 1px solid #acd023
+
+		td
+			padding-top 17px
+			padding-bottom 17px
+			border-bottom 1px solid #c9cfd2
+			vertical-align middle
+
+			&:first-child
+				width 62.5%
+				padding-left 33px
+			
+			&:nth-child(2)
+				width 16.7%
+			
+			&:last-child
+				width 5.2%
+
+	&_productPhoto, &_productTitle
+		display inline-block
+		vertical-align middle
+	
+	&_productPhoto
+		margin-right 24px
+
+	&_productTitle
+		letter-spacing 0.025em
+		text-transform uppercase
+		color $black2
+	
+	&_changeBtns
+		display flex
+		justify-content space-between
+		align-items center
+		width 110px
+	
+	&_quantity
+		margin 0 22px 0 18px

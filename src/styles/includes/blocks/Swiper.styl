@@ -1,0 +1,80 @@
+.Swiper
+	&_feedback
+		@media $xs
+			margin-right auto
+			margin-left auto
+
+	&_paginationWrapper
+		position absolute
+		z-index 1
+		bottom 51px
+		left 0
+		width 100%
+
+		@media $smMinus
+			bottom 2.93vw
+	
+	&_pagination
+		max-width 1051px
+		padding-right 65px
+
+		@media $smMinus
+			padding-right 0
+	
+	&-reviews
+		.Swiper_slide
+			padding-top 60px
+			padding-right 10px
+			padding-bottom 60px
+			padding-left 10px
+			
+			&:hover
+				z-index -1
+
+			&-active
+				display flex
+				justify-content flex-end
+	
+	&-products
+		.Swiper_pagination
+			max-width none
+			margin-top 43px
+			margin-bottom 41px
+			padding-right 0
+	
+	&-similarProducts
+		margin-bottom -50px
+
+		@media $xs
+			margin-bottom 0
+		
+		.Swiper_slide
+			padding-top 50px
+			padding-bottom 50px
+
+			&:hover
+				z-index -1
+				
+			&-active
+				.ProductBlock
+					margin-left auto
+
+					@media $xs
+						margin-right auto
+
+			&-next
+				padding-left 10px
+
+				.ProductBlock
+					margin-right auto
+					margin-left auto
+
+					@media $smMinus
+						margin-left 0
+				
+				& + .Swiper_slide
+					padding-right 10px
+
+					.ProductBlock
+						margin-right auto
+						margin-left auto

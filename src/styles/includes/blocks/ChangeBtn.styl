@@ -1,0 +1,27 @@
+.ChangeBtn
+	display inline-flex
+	justify-content center
+	align-items center
+	width 30px
+	height 36px
+	border-radius 5px
+	background #abd021
+	font-weight 600
+	font-size 18px
+	color $white
+	@extend .transition
+	
+	&:hover
+		background-color #72c45f
+	
+	&-minus
+		background #abd021 url('../img/minus.png') center center no-repeat
+	
+	&-plus
+		background #abd021 url('../img/plus.png') center center no-repeat
+	
+	&-remove
+		background #eb5012 url('../img/remove_icon.png') center center no-repeat
+
+		&:hover
+			background-color#f00

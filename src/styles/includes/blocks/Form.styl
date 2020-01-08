@@ -1,0 +1,44 @@
+.Form
+	max-width 819px
+
+	&_wrapper
+		margin-bottom 46px
+
+		@media $xxs
+			margin-bottom 20px
+
+	&_fieldGroup
+		display flex
+		margin-bottom 32px
+
+		@media $xxs
+			flex-direction column
+			margin-bottom 15px
+
+		&:last-child
+			margin-bottom 0
+	
+	&_field
+		flex 1 0 0
+
+		&:first-child
+			margin-right 21px
+
+			@media $xxs
+				margin-right 0
+				margin-bottom 15px
+		
+		&:last-child
+			margin-right 0
+	
+	&_label
+		margin-bottom 9px
+		
+		& > .Required
+			margin-left 5px
+	
+	&_agreement, &_actions
+		text-align center
+	
+	&_agreement
+		margin-bottom 30px

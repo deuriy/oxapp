@@ -1,0 +1,58 @@
+extends /layouts/main_layout
+block vars
+	- var title = "Корзина (1-ый шаг)";
+block content
+	.BasketPage
+		.Breadcrumbs.BasketPage_breadcrumbs
+			.Container
+				ul.Breadcrumbs_list
+					li.Breadcrumbs_item
+						a(href="/").Breadcrumbs_link Главная
+					li.Breadcrumbs_item.Semibold Корзина
+		.Container.BasketPage_container
+			.BasketPage_header
+				h1.SectionTitle.BasketPage_title Корзина
+				ul.Steps
+					li.Steps_item.Steps_item-green 1
+					li.Steps_item 2
+			.BasketPage_body
+				.BasketPage_tableWrapper
+					table.ProductsTable
+						tbody
+							tr
+								td
+									.ProductsTable_productPhoto
+										img(src="img/product_photo_thumbnail.png", alt="")
+									h3.ProductsTable_productTitle.Semibold Healthberry immunity
+								td
+									.ProductsTable_changeBtns
+										a(href="javascript: void(0)").ChangeBtn.ChangeBtn-minus
+										span.ProductsTable_quantity 3
+										a(href="javascript: void(0)").ChangeBtn.ChangeBtn-plus
+								td
+									.ProductsTable_price 3 960 руб.
+								td
+									a(href="javascript: void(0)").ChangeBtn.ChangeBtn-remove
+							tr
+								td
+									.ProductsTable_productPhoto
+										img(src="img/product_photo_thumbnail.png", alt="")
+									h3.ProductsTable_productTitle.Semibold Healthberry immunity
+								td
+									.ProductsTable_changeBtns
+										a(href="javascript: void(0)").ChangeBtn.ChangeBtn-minus
+										span.ProductsTable_quantity 1
+										a(href="javascript: void(0)").ChangeBtn.ChangeBtn-plus
+								td
+									.ProductsTable_price 1 320 руб.
+								td
+									a(href="javascript: void(0)").ChangeBtn.ChangeBtn-remove
+				.BasketPage_bottom
+					.BasketPage_orderPrice
+						span.BasketPage_orderPriceLabel Сумма заказа: &nbsp;
+						span.Bold 5 280 
+						.
+							руб.
+					.BasketPage_orderBtns
+						a(href="javascript: void(0)").BtnGrey Вернуться в каталог
+						a(href="javascript: void(0)").BtnPrimary.BasketPage_checkoutBtn Оформить заказ

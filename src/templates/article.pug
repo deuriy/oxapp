@@ -1,0 +1,42 @@
+extends /layouts/main_layout
+block vars
+	- var title = "Статья";
+block content
+	.Article
+		.Breadcrumbs.Article_breadcrumbs
+			.Container
+				ul.Breadcrumbs_list
+					li.Breadcrumbs_item
+						a(href="/").Breadcrumbs_link Главная
+					li.Breadcrumbs_item.Semibold Начать свой бизнес
+		.Container.Container-article
+			h1.SectionTitle.Article_title Начать свой бизнес
+			.Article_text
+				p.Semibold &emsp;Депутат законодательного собрания Приморского края Артем Самсонов прокомментировал инцидент с БДСМ-вечеринкой на последнем звонке в одной из школ, сообщает РИА «Новости».
+				p &emsp;Ранее стало известно, что во Владивостоке школьники надели #[a(href="#") одежду для БДСМ] и пошли на выпускной. Позднее источник сообщил, что директриса школы уволилась.
+				p По его мнению, директора школы нельзя увольнять. Депутат отметил, что «ничего страшного не произошло».
+				p #[span.Italic «Ну дети, ну нарядились? Да молодцы дети, правильно сделали. А почему директор виноват?»], — сказал депутат.
+				p Самсонов заявил, что если директор уволится, то он пожалуется на департамент образования в прокуратуру».
+				.Article_images
+					.Article_img
+						img(src="img/white_img.png", alt="White image")
+					.Article_img
+						img(src="img/white_img.png", alt="White image")
+				p &emsp;Владивостоке уволилась директриса школы, в которой школьники пришли на выпускной в одежде для БДСМ. Об этом сообщает РИА «Новости» со ссылкой на источник в учебном заведении.
+				p &emsp;Группа выпускников, которая решила устроить «день непослушания», пришла на торжественное мероприятие не в праздничных костюмах и платьях, а в полицейской форме и одежде для БДСМ.
+				span.Semibold Lorem Ipsum has been the industry's standard dummy:#[br]
+				ul
+					li It has survived not only five centuries
+					li Bbut also the leap into electronic typesettin
+					li Remaining essentially unchanged
+				p &emsp;Группа выпускников, которая решила устроить «день непослушания», пришла на торжественное мероприятие не в праздничных костюмах и платьях, а в полицейской форме и одежде для БДСМ.
+		.Container
+			.Share.Article_share
+				h3.Share_title Рассказать друзьям:
+				ul.Share_socials
+					li.Share_social
+						a(href="http://fb.com", target="_blank").Share_socLink Facebook
+					li.Share_social
+						a(href="http://instagram.com", target="_blank").Share_socLink Instagram
+					li.Share_social
+						a(href="http://vk.com", target="_blank").Share_socLink Vkontakte

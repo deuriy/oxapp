@@ -1,0 +1,57 @@
+.Feedback
+	width 623px
+	min-height 304px
+	padding 37px 29px
+	max-width 100%
+	background $white
+	@extend .transition
+
+	@media $smMinus
+		min-height 280px
+		padding 25px 20px
+	
+	@media $xs
+		min-height 0
+	
+	&:hover
+		-webkit-box-shadow 0 0 65px rgba(222, 222, 222, 0.75)
+		box-shadow 0 0 65px rgba(222, 222, 222, 0.75)
+		
+		.Feedback_header
+			border-bottom-color $green2
+	
+	&_header
+		margin-bottom 28px
+		padding-bottom 24px
+		border-bottom 1px solid #e5e9eb
+		line-height normal
+		letter-spacing 0.025em
+		text-transform uppercase
+		@extend .transition
+		
+		@media $smMinus
+			margin-bottom 18px
+			padding-bottom 18px
+	
+	&_date
+		margin-bottom 1.143em
+		font-size 14px
+		color $green2
+
+		@media $smMinus
+			font-size 13px
+	
+	&_author
+		font-weight 600
+		font-size 15px
+
+		@media $smMinus
+			font-size 14px
+	
+	&_text, &_text p
+		font-size 14px
+		line-height 1.71
+		color #888D96
+
+		@media $smMinus
+			font-size 13px
